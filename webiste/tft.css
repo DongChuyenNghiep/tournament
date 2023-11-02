@@ -1,0 +1,20 @@
+.hidden{
+    display: none;
+}
+@media screen and (min-width: 1400px) {
+    .all-player {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .table-a,.table-b,.table-c{
+        width: 33%; /* On smaller screens, make tables 100% width */
+        
+    }
+    table.pool-a,table.pool-b,table.pool-c{
+        width: 450px;
+        border: 1px solid black;
+    }
+}

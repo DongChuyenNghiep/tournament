@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="updatebuttontft.js"></script>
+    <link rel="stylesheet" href="tft.css">
+</head>
+
+<body>
+    <!-- Phần navigator bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">League of Legends</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teamfight_tactics.html">Teamfight Tactics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Arena Of Valor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Phần table giải đấu-->
+    <h2 style="text-align: center;margin-top: 30px;">BẢNG ĐẤU TEAMFIGHT TACTICS (VÒNG BẢNG)</h2>
+    <div class="all-player" style="margin-top: 10px ;text-align: center;margin-left: 40px;">
+        <!--Phần table A-->
+        <section class="table-a">
+            <H3>BẢNG A</H3>
+            <table class="table table-striped-columns pool-a">
+                <thead>
+                    <tr>
+                        <th scope="col">Tuyển thủ</th>
+                        <th scope="col">Lớp</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td id="row0-name-A">Beacon</td>
+                        <td id="row0-class-A">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row1-name-A">Kero</td>
+                        <td id="row1-class-A">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row2-name-A">ENJF</td>
+                        <td id="row2-class-A">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row3-name-A">Beacon</td>
+                        <td id="row3-class-A">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row4-name-A">Kero</td>
+                        <td id="row4-class-A">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row5-name-A">ENJF</td>
+                        <td id="row5-class-A">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row6-name-A">Beacon</td>
+                        <td id="row6-class-A">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row7-name-A">Kero</td>
+                        <td id="row7-class-A">Cựu học sinh</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="buttonA" onclick="showUpdateSection('A')">Update table A</button>
+        </section>
+
+        <section class="table-b">
+            <H3>BẢNG B</H3>
+            <table class="table table-striped-columns pool-b">
+                <thead>
+                    <tr>
+                        <th scope="col">Tuyển thủ</th>
+                        <th scope="col">Lớp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="row0-name-B">Beacon</td>
+                        <td id="row0-class-B">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row1-name-B">Kero</td>
+                        <td id="row1-class-B">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row2-name-B">ENJF</td>
+                        <td id="row2-class-B">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row3-name-B">Beacon</td>
+                        <td id="row3-class-B">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row4-name-B">Kero</td>
+                        <td id="row4-class-B">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row5-name-B">ENJF</td>
+                        <td id="row5-class-B">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row6-name-B">Beacon</td>
+                        <td id="row6-class-B">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row7-name-B">Kero</td>
+                        <td id="row7-class-B">Cựu học sinh</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <button class="buttonB" onclick="showUpdateSection('B')">Update table B</button>
+        </section>
+
+        <section class="table-c">
+            <H3>BẢNG C</H3>
+            <table class="table table-striped-columns pool-c">
+                <thead>
+                    <tr>
+                        <th scope="col">Tuyển thủ</th>
+                        <th scope="col">Lớp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="row0-name-C">Beacon</td>
+                        <td id="row0-class-C">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row1-name-C">Kero</td>
+                        <td id="row1-class-C">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row2-name-C">ENJF</td>
+                        <td id="row2-class-C">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row3-name-C">Beacon</td>
+                        <td id="row3-class-C">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row4-name-C">ENJF</td>
+                        <td id="row4-class-C">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row5-name-C">Beacon</td>
+                        <td id="row5-class-C">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row6-name-C">Kero</td>
+                        <td id="row6-class-C">Cựu học sinh</td>
+                    </tr>
+                    <tr>
+                        <td id="row7-name-C">Kero</td>
+                        <td id="row7-class-C">Cựu học sinh</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="buttonC" onclick="showUpdateSection('C')">Update table C</button>
+            
+        </section>
+
+        <div id="pin-section-A" class="hidden">
+            <input type="text" id="pin-A" placeholder="Enter PIN">
+            <button onclick="verifyPIN('A')">Submit</button>
+            
+        </div>
+
+        <div id="update-section-A" class="hidden">
+            <select id="rowSelector-A">
+                <option value="0">Row 1</option>
+                <option value="1">Row 2</option>
+                <option value="2">Row 3</option>
+                <option value="3">Row 4</option>
+                <option value="4">Row 5</option>
+                <option value="5">Row 6</option>
+                <option value="6">Row 7</option>
+                <option value="7">Row 8</option>
+            </select>
+            <input type="text" id="newName-A" placeholder="New Name">
+            <input type="text" id="newClass-A" placeholder="New Class">
+            <button onclick="updateInfo('A')">Confirm Update</button>
+        </div>
+
+        <div id="pin-section-B" class="hidden">
+            <input type="text" id="pin-B" placeholder="Enter PIN">
+            <button onclick="verifyPIN('B')">Submit</button>
+            
+        </div>
+
+        <div id="update-section-B" class="hidden">
+            <select id="rowSelector-B">
+                <option value="0">Row 1</option>
+                <option value="1">Row 2</option>
+                <option value="2">Row 3</option>
+                <option value="3">Row 4</option>
+                <option value="4">Row 5</option>
+                <option value="5">Row 6</option>
+                <option value="6">Row 7</option>
+                <option value="7">Row 8</option>
+            </select>
+            <input type="text" id="newName-B" placeholder="New Name">
+            <input type="text" id="newClass-B" placeholder="New Class">
+            <button onclick="updateInfo('B')">Confirm Update</button>
+        </div>
+
+        <div id="pin-section-C" class="hidden">
+            <input type="text" id="pin-C" placeholder="Enter PIN">
+            <button onclick="verifyPIN('C')">Submit</button>
+           <button onclick="closeUpdateSection()">Close</button>
+        </div>
+
+        <div id="update-section-C" class="hidden">
+            <select id="rowSelector-C">
+                <option value="0">Row 1</option>
+                <option value="1">Row 2</option>
+                <option value="2">Row 3</option>
+                <option value="3">Row 4</option>
+                <option value="4">Row 5</option>
+                <option value="5">Row 6</option>
+                <option value="6">Row 7</option>
+                <option value="7">Row 8</option>
+            </select>
+            <input type="text" id="newName-C" placeholder="New Name">
+            <input type="text" id="newClass-C" placeholder="New Class">
+            <button onclick="updateInfo('C')">Confirm Update</button>
+            <button onclick="closeUpdateSection()">Close</button>
+            
+        </div>
+
+        <table class="table table1">
+            <thead>
+                <tr>
+                    <th scope="col">Tuyển thủ</th>
+                    <th scope="col">Trận 1</th>
+                    <th scope="col">Trận 2</th>
+                    <th scope="col">Trận 3</th>
+                    <th scope="col">Trận 4</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <button onclick="updateData()">Update Data</button>
+
+        
+            
+        <script>
+            var dataA = [
+                { name: "", class: "" },
+                { name: "", class: "" },
+                { name: "", class: "" },
+                { name: "", class: "" },
+                { name: "", class: "" },
+                { name: "", class: "" },
+                { name: "", class: "" },
+                { name: "", class: "" }
+            ];
+
+            var dataB = [
+                { name: "Beacon", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" },
+                { name: "ENJF", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" }
+            ];
+
+            var dataC = [
+                { name: "Beacon", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" },
+                { name: "ENJF", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" },
+                { name: "Kero", class: "Cựu học sinh" }
+
+            ];
+
+            function showUpdateSection(table) {
+                document.getElementById("pin-section-" + table).style.display = "block";
+            }
+
+            function verifyPIN(table) {
+                var pin = document.getElementById("pin-" + table).value;
+                if (pin === '1234') {
+                    document.getElementById("pin-section-" + table).style.display = "none";
+                    document.getElementById("update-section-" + table).style.display = "block";
+                } else {
+                    alert("Invalid PIN. Try again.");
+                }
+            }
+
+            function updateInfo(table) {
+                var rowSelector = document.getElementById("rowSelector-" + table);
+                var selectedRow = rowSelector.value;
+
+                var newName = document.getElementById("newName-" + table).value;
+                var newClass = document.getElementById("newClass-" + table).value;
+
+                if (table === 'A') {
+                    dataA[selectedRow].name = newName;
+                    dataA[selectedRow].class = newClass;
+                    updateTable(table, dataA);
+                } else if (table === 'B') {
+                    dataB[selectedRow].name = newName;
+                    dataB[selectedRow].class = newClass;
+                    updateTable(table, dataB);
+                } else if (table === 'C') {
+                    dataC[selectedRow].name = newName;
+                    dataC[selectedRow].class = newClass;
+                    updateTable(table, dataC);
+                }
+
+                // Store the updated data in Local Storage
+                localStorage.setItem("dataA", JSON.stringify(dataA));
+                localStorage.setItem("dataB", JSON.stringify(dataB));
+                localStorage.setItem("dataC", JSON.stringify(dataC));
+            }
+            function closeUpdateSection() {
+        document.getElementById("update-section").style.display = "none";
+    }
+            function updateTable(table, data) {
+                for (var i = 0; i < data.length; i++) {
+                    document.getElementById("row" + i + "-name-" + table).textContent = data[i].name;
+                    document.getElementById("row" + i + "-class-" + table).textContent = data[i].class;
+                }
+            }
+// Get the table rows
+var tableRows = document.querySelectorAll(".table1 tbody tr");
+            
+            // Loop through each row and update the name cell
+            for (var i = 0; i < dataA.length; i++) {
+                var row = tableRows[i];
+                var nameCell = row.cells[0]; // The "Tuyển thủ" column is the first cell
+                nameCell.textContent = dataA[i].name;
+            }
+            
+            // Load data from Local Storage on page load
+            var savedDataA = localStorage.getItem("dataA");
+            if (savedDataA) {
+                dataA = JSON.parse(savedDataA);
+                updateTable('A', dataA);
+            }
+
+            var savedDataB = localStorage.getItem("dataB");
+            if (savedDataB) {
+                dataB = JSON.parse(savedDataB);
+                updateTable('B', dataB);
+            }
+
+            var savedDataC = localStorage.getItem("dataC");
+            if (savedDataC) {
+                dataC = JSON.parse(savedDataC);
+                updateTable('C', dataC);
+            }
+            
+        </script>
+
+
+
+
+</body>
+
+</html>
